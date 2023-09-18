@@ -1,7 +1,7 @@
 const aCar = {
   owner : "Joe Bloggs",
     type: {
-      make : 'Toyota',
+        make : 'Toyota',
         model : 'Corolla',
         cc : 1.8 
   },
@@ -16,4 +16,20 @@ console.log(
     aCar.registration.county +
     "-" +
     aCar.registration.number
+);
+
+aCar.milage = 10000
+aCar.color = {
+  exterior: "red",
+  interior: { texture: "leather", shade: "cream" }
+}
+
+console.log(
+  "It is a " +
+    aCar.color.exterior +
+    " car, " +
+    aCar.milage +
+    " milage, with " +
+    aCar.color.interior.texture +
+    " interior."
 );
